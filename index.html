@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Panel</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navContainer" id="navCon">
+        <div class="logo" id="logo">TITLE HERE</div>
+        <div class="icon cancel-btn" onclick="cancelClose()" id="cancel">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul id="lists">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="search" id="search">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search News"
+            id="searchTxt"
+            class="searchTxt"
+          />
+          <button class="searchBtn" id="searchBtn" onclick="searchBtnCall()">
+            <i class="fas fa-search" class="searchBtn"></i>
+          </button>
+        </div>
+      </div>
+      <div class="icon menu-btn" onclick="menuOpen()" id="menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <script src="index.js"></script>
+  </body>
+</html>
